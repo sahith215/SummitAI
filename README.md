@@ -1,73 +1,104 @@
-# Welcome to your Lovable project
+# 🚀 LNIT Summit 2K26 – Official AI Chatbot
 
-## Project info
+---
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 📌 Project Info
 
-## How can I edit this code?
+**Project Name:** Chatbot for College Summit  
+**Purpose:** Official chatbot for LNIT Summit – 2026  
+**Summit Website:** https://lendinit.lendi.edu.in/
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+## 🛠️ How Can I Run This Project Locally?
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Make sure you have **Node.js (v18+)** installed.
 
-Changes made via Lovable will be committed automatically to this repo.
+```bash
+# Step 1: Clone the repository
+git clone https://github.com/sahith215/Chatbot-for-College-Summit.git
 
-**Use your preferred IDE**
+# Step 2: Navigate to the project directory
+cd Chatbot-for-College-Summit
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+# Step 3: Install dependencies
+npm install
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Step 4: Start development server
 npm run dev
 ```
+The app will run locally at:
+````bash
+http://localhost:5173
+````
 
-**Edit a file directly in GitHub**
+## 🔐 Environment Variables
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Create a .env file in the root directory:
+```
+VITE_WEBHOOK_URL=https://your-n8n-production-webhook-url
+```
 
-**Use GitHub Codespaces**
+⚠️ Do NOT commit your .env file to GitHub.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Architecture
+# 🔹 Frontend
 
-## What technologies are used for this project?
+- React + TypeScript
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
 
-## How can I deploy this project?
+# 🔹 Backend
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+- n8n Workflow
 
-## Can I connect a custom domain to my Lovable project?
+- Google Gemini Chat Model
 
-Yes, you can!
+- Webhook-based architecture
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+ Flow
+User → React UI → n8n Webhook → Gemini → Response → UI Render
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+# Technologies Used
+
+- Vite
+
+- React
+
+- TypeScript
+
+- Tailwind CSS
+
+- ShadCN UI
+
+- n8n
+
+- Google Gemini API
+
+#  Features ✨
+
+- Structured AI responses
+
+- Markdown rendering with proper formatting
+
+- Typing animation
+
+- Production webhook integration
+
+- Fully responsive UI
+
+- Official LNIT Summit 2K26 event data integration
+
+# ⚙️ Backend Deployment
+
+- Deploy n8n using:
+
+- n8n Cloud
+
+- Railway
+
+- VPS / Docker
+
+- AWS EC2
+
+Ensure you use the Production Webhook URL in your frontend.

@@ -41,14 +41,14 @@ VITE_WEBHOOK_URL=https://your-n8n-production-webhook-url
 
 ⚠️ Do NOT commit your .env file to GitHub.
 
-## Project Architecture
-# 🔹 Frontend
+# Project Architecture
+## 🔹 Frontend
 
 - React + TypeScript
 
 - Tailwind CSS
 
-# 🔹 Backend
+## 🔹 Backend
 
 - n8n Workflow
 
@@ -56,10 +56,10 @@ VITE_WEBHOOK_URL=https://your-n8n-production-webhook-url
 
 - Webhook-based architecture
 
- Flow
+## Flow
 User → React UI → n8n Webhook → Gemini → Response → UI Render
 
-# Technologies Used
+## Technologies Used
 
 - Vite
 
@@ -75,7 +75,7 @@ User → React UI → n8n Webhook → Gemini → Response → UI Render
 
 - Google Gemini API
 
-#  Features ✨
+##  Features ✨
 
 - Structured AI responses
 
@@ -89,7 +89,7 @@ User → React UI → n8n Webhook → Gemini → Response → UI Render
 
 - Official LNIT Summit 2K26 event data integration
 
-# ⚙️ Backend Deployment
+## ⚙️ Backend Deployment
 
 - Deploy n8n using:
 
